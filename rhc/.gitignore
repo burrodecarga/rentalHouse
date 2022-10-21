@@ -8,3 +8,7 @@ out
 
 .env
 .env.local
+
+_cacache
+_locks
+_logs
