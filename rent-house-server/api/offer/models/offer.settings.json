@@ -1,0 +1,146 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "name": "offer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "rental",
+        "sale"
+      ],
+      "default": "rental",
+      "required": true
+    },
+    "detail": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "price": {
+      "type": "float"
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "documents": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bathroom": {
+      "type": "integer",
+      "default": 1
+    },
+    "rooms": {
+      "type": "integer",
+      "default": 0
+    },
+    "kitchen": {
+      "type": "integer",
+      "default": 1
+    },
+    "bedroom": {
+      "type": "integer",
+      "default": 1
+    },
+    "living_room": {
+      "type": "integer",
+      "default": 1
+    },
+    "dining_room": {
+      "type": "integer",
+      "default": 1
+    },
+    "nursery": {
+      "type": "integer",
+      "default": 0
+    },
+    "garage": {
+      "type": "integer",
+      "default": 0
+    },
+    "porch": {
+      "type": "integer",
+      "default": 0
+    },
+    "property": {
+      "model": "property"
+    },
+    "pets": {
+      "collection": "pet",
+      "via": "offer"
+    },
+    "latitude": {
+      "type": "float",
+      "default": 0
+    },
+    "longitude": {
+      "type": "float",
+      "default": 0
+    },
+    "sqft": {
+      "type": "decimal"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "offer": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "default": "10.187128113323745, -68.00327061124072"
+    },
+    "area": {
+      "type": "float"
+    },
+    "pets_allowed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "category": {
+      "model": "category"
+    }
+  }
+}

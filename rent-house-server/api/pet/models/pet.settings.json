@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pets",
+  "info": {
+    "name": "pet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "limit": {
+      "type": "integer"
+    },
+    "policy": {
+      "type": "text"
+    },
+    "fees": {
+      "type": "string"
+    },
+    "offer": {
+      "via": "pets",
+      "model": "offer"
+    }
+  }
+}

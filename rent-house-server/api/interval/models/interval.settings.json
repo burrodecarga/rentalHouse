@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "intervals",
+  "info": {
+    "name": "interval"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "interval": {
+      "type": "string"
+    },
+    "from": {
+      "type": "float"
+    },
+    "to": {
+      "type": "float"
+    }
+  }
+}

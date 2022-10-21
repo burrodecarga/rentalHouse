@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "name": "navigation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "isLoged": {
+      "type": "boolean",
+      "default": true
+    },
+    "isNotLoged": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

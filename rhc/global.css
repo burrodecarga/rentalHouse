@@ -1,0 +1,90 @@
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.overflow {
+  height: 45%;
+  overflow: hidden;
+}
+
+.overflow .card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+  transform: scale(1.8);
+}
+
+#nprogress .bar {
+  background: #ff5367 !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #ffbb00;
+  border-left-color: #ffbb00;
+}
+
+.cluster-marker {
+  color: #fff;
+  background: #1978c8;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crime-marker {
+  background: none;
+  border: none;
+}
+
+.crime-marker img {
+  width: 15px;
+}
+
+
+.next{
+  background-color: #E87D1B;
+  color: #fff;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  border: none;
+  margin-left: 20px;
+  transition: .5s ease;
+}
+.next:hover, .previous:hover {
+  background-color: #2d5fde;
+  color: #fff;
+  border: none;
+}
+.previous{
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  border: 1px solid #E87D1B;
+  transition: .5s ease;
+}
+
+.card-map{
+ width: 16rem;
+ margin-bottom: 20px;
+}
+

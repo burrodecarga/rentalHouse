@@ -1,0 +1,21 @@
+.clusterMarker {
+  color: #fff;
+  background: #1978c8;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.houseMarker {
+  background: none;
+  border: none;
+}
+
+.houseMarkerImg {
+  width: 25px;
+  background: none;
+  border: none;
+  z-index: 999;
+} 
